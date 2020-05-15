@@ -1,0 +1,16 @@
+Anrede : Herr
+Vorname : Benjamin
+Nachname : Zekavica
+Strasse : Musterstaße
+Hausnummer : 12
+Postleitzahl : 52066
+Stadt : Aachen
+Geboren am : 30.08.1998
+E-Mail : bz@power-radach.de
+Welche Tanzschule möchten Sie besuchen? : La Boca
+Haben Sie unser Festival besucht? : Nein
+Erfahrungen : Grundkenntnisse
+Bezahlung mit : Kreditkarte
+Kreditkartennummer : 4145454754545454
+Datenschutz : Ja, zugestimmt.
+Schnupperkurs für 2 Personen : Ja, zugestimmt.
