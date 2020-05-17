@@ -23,61 +23,111 @@
                     <h2 class="event-form__headline">Persönliche Angaben</h2>
                     <h3 class="event-form__subheadline">Schritt 1</h3>
                     <div class="event-form__fields">
-                        <div class="event-form__field-wrapper form-group">
-                            <label class="event-form__field-label" for="form-anrede">Anrede*</label>
-                            <select class="event-form__field form-control" name="anrede" id="form-anrede" required>
-                                <option value="" disabled selected>Anrede auswählen</option>
-                                <option value="Herr">Herr</option>    
-                                <option value="Frau">Frau</option>
-                            </select>
-                            <?php errorMessage(); ?>
+                        <div class="form__part form__part--man">
+                            <h4>
+                                Mann
+                            </h4>
+                            <div class="event-form__field-col row">
+                                <div class="event-form__field-wrapper col-sm-6 form-group" role="form" data-toggle="validator">
+                                    <label class="event-form__field-label" for="form-vorname">Vorname * </label>
+                                    <input class="event-form__field form-control" type="text" name="form-vorname" id="form-vorname" placeholder="Vornamen eingeben" required />
+                                <?php errorMessage(); ?>
+                                </div>
+                                <div class="event-form__field-wrapper col-sm-6 form-group">
+                                    <label class="event-form__field-label" for="form-nachname">Nachname *</label>
+                                    <input class="event-form__field form-control" type="text" name="form-nachname" id="form-nachname" placeholder="Nachname eingeben" required />
+                                    <?php errorMessage(); ?>
+                                </div>
+                            </div>
+                            <div class="event-form__field-col row">
+                                <div class="event-form__field-wrapper col-sm-8 form-group">
+                                    <label class="event-form__field-label" for="form-street">Straße*</label>
+                                    <input class="event-form__field form-control" type="text" name="form-street" id="form-street" placeholder="Straße eingeben" required />
+                                    <?php errorMessage(); ?>
+                                </div>
+                                <div class="event-form__field-wrapper col-sm-4 form-group">
+                                    <label class="event-form__field-label" for="form-house-num">Hausnummer * </label>
+                                    <input class="event-form__field form-control" type="text" name="form-house-num" id="form-house-num" placeholder="Hausnummer eingeben" required />
+                                    <?php errorMessage(); ?>
+                                </div>
+                            </div>
+                            <div class="event-form__field-col row">
+                                <div class="event-form__field-wrapper col-sm-3 form-group">
+                                    <label class="event-form__field-label" for="form-plz">PLZ *</label>
+                                    <input class="event-form__field form-control" type="number" name="form-plz" id="form-plz" placeholder="Postleitzahl eingeben" required />
+                                    <?php errorMessage(); ?>
+                                </div>
+                                <div class="event-form__field-wrapper col-sm-9 form-group">
+                                    <label class="event-form__field-label" for="form-ort">Stadt *</label>
+                                    <input class="event-form__field form-control" type="text" name="form-ort" id="form-ort" placeholder="Wohnort eingeben" required />
+                                    <?php errorMessage(); ?>
+                                </div>
+                            </div>
+                            <div class="event-form__field-col row">
+                                <div class="event-form__field-wrapper col-sm-6 form-group">
+                                    <label class="event-form__field-label" for="form-birthday">Geburtsdatum *</label>
+                                    <input class="event-form__field form-control" type="date" name="form-birthday" id="form-birthday" required />
+                                    <?php errorMessage(); ?>
+                                </div>
+                                <div class="event-form__field-wrapper col-sm-6 form-group">
+                                    <label class="event-form__field-label" for="form-email">E-Mail *</label>
+                                    <input class="event-form__field form-control" type="email" name="form-email" id="form-email" placeholder="E-Mail Adresse eingeben" required />
+                                    <?php errorMessage(); ?>
+                                </div>
+                            </div>
                         </div>
-                        <div class="event-form__field-col row">
-                            <div class="event-form__field-wrapper col-sm-6 form-group" role="form" data-toggle="validator">
-                                <label class="event-form__field-label" for="form-vorname">Vorname * </label>
-                                <input class="event-form__field form-control" type="text" name="form-vorname" id="form-vorname" placeholder="Vornamen eingeben" required />
-                            <?php errorMessage(); ?>
-                            </div>
-                            <div class="event-form__field-wrapper col-sm-6 form-group">
-                                <label class="event-form__field-label" for="form-nachname">Nachname *</label>
-                                <input class="event-form__field form-control" type="text" name="form-nachname" id="form-nachname" placeholder="Nachname eingeben" required />
+                        <hr />
+                        <div class="form__part form__part--woman">
+                            <h4>
+                                Frau
+                            </h4>
+                            <div class="event-form__field-col row">
+                                <div class="event-form__field-wrapper col-sm-6 form-group" role="form" data-toggle="validator">
+                                    <label class="event-form__field-label" for="form-vorname-woman">Vorname * </label>
+                                    <input class="event-form__field form-control" type="text" name="form-vorname-woman" id="form-vorname-woman" placeholder="Vornamen eingeben" required />
                                 <?php errorMessage(); ?>
+                                </div>
+                                <div class="event-form__field-wrapper col-sm-6 form-group">
+                                    <label class="event-form__field-label" for="form-nachname-woman">Nachname *</label>
+                                    <input class="event-form__field form-control" type="text" name="form-nachname-woman" id="form-nachname-woman" placeholder="Nachname eingeben" required />
+                                    <?php errorMessage(); ?>
+                                </div>
                             </div>
-                        </div>
-                        <div class="event-form__field-col row">
-                            <div class="event-form__field-wrapper col-sm-8 form-group">
-                                <label class="event-form__field-label" for="form-street">Straße*</label>
-                                <input class="event-form__field form-control" type="text" name="form-street" id="form-street" placeholder="Straße eingeben" required />
-                                <?php errorMessage(); ?>
+                            <div class="event-form__field-col row">
+                                <div class="event-form__field-wrapper col-sm-8 form-group">
+                                    <label class="event-form__field-label" for="form-street-woman">Straße*</label>
+                                    <input class="event-form__field form-control" type="text" name="form-street-woman" id="form-street-woman" placeholder="Straße eingeben" required />
+                                    <?php errorMessage(); ?>
+                                </div>
+                                <div class="event-form__field-wrapper col-sm-4 form-group">
+                                    <label class="event-form__field-label" for="form-house-num-woman">Hausnummer * </label>
+                                    <input class="event-form__field form-control" type="text" name="form-house-num-woman" id="form-house-num-woman" placeholder="Hausnummer eingeben" required />
+                                    <?php errorMessage(); ?>
+                                </div>
                             </div>
-                            <div class="event-form__field-wrapper col-sm-4 form-group">
-                                <label class="event-form__field-label" for="form-house-num">Hausnummer * </label>
-                                <input class="event-form__field form-control" type="text" name="form-house-num" id="form-house-num" placeholder="Hausnummer eingeben" required />
-                                <?php errorMessage(); ?>
+                            <div class="event-form__field-col row">
+                                <div class="event-form__field-wrapper col-sm-3 form-group">
+                                    <label class="event-form__field-label" for="form-plz-woman">PLZ *</label>
+                                    <input class="event-form__field form-control" type="number" name="form-plz-woman" id="form-plz-woman" placeholder="Postleitzahl eingeben" required />
+                                    <?php errorMessage(); ?>
+                                </div>
+                                <div class="event-form__field-wrapper col-sm-9 form-group">
+                                    <label class="event-form__field-label" for="form-ort-woman">Stadt *</label>
+                                    <input class="event-form__field form-control" type="text" name="form-ort-woman" id="form-ort-woman" placeholder="Wohnort eingeben" required />
+                                    <?php errorMessage(); ?>
+                                </div>
                             </div>
-                        </div>
-                        <div class="event-form__field-col row">
-                            <div class="event-form__field-wrapper col-sm-3 form-group">
-                                <label class="event-form__field-label" for="form-plz">PLZ *</label>
-                                <input class="event-form__field form-control" type="number" name="form-plz" id="form-plz" placeholder="Postleitzahl eingeben" required />
-                                <?php errorMessage(); ?>
-                            </div>
-                            <div class="event-form__field-wrapper col-sm-9 form-group">
-                                <label class="event-form__field-label" for="form-ort">Stadt *</label>
-                                <input class="event-form__field form-control" type="text" name="form-ort" id="form-ort" placeholder="Wohnort eingeben" required />
-                                <?php errorMessage(); ?>
-                            </div>
-                        </div>
-                        <div class="event-form__field-col row">
-                            <div class="event-form__field-wrapper col-sm-6 form-group">
-                                <label class="event-form__field-label" for="form-birthday">Geburtsdatum *</label>
-                                <input class="event-form__field form-control" type="date" name="form-birthday" id="form-birthday" required />
-                                <?php errorMessage(); ?>
-                            </div>
-                            <div class="event-form__field-wrapper col-sm-6 form-group">
-                                <label class="event-form__field-label" for="form-email">E-Mail *</label>
-                                <input class="event-form__field form-control" type="email" name="form-email" id="form-email" placeholder="E-Mail Adresse eingeben" required />
-                                <?php errorMessage(); ?>
+                            <div class="event-form__field-col row">
+                                <div class="event-form__field-wrapper col-sm-6 form-group">
+                                    <label class="event-form__field-label" for="form-birthday-woman">Geburtsdatum *</label>
+                                    <input class="event-form__field form-control" type="date" name="form-birthday-woman" id="form-birthday-woman" required />
+                                    <?php errorMessage(); ?>
+                                </div>
+                                <div class="event-form__field-wrapper col-sm-6 form-group">
+                                    <label class="event-form__field-label" for="form-email-woman">E-Mail *</label>
+                                    <input class="event-form__field form-control" type="email" name="form-email-woman" id="form-email-woman" placeholder="E-Mail Adresse eingeben" required />
+                                    <?php errorMessage(); ?>
+                                </div>
                             </div>
                         </div>
                     </div>

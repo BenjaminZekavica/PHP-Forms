@@ -1,0 +1,32 @@
+Männlicher Partner
+
+Vorname : Max
+Nachname : Mustermann
+Strasse : Musterweg
+Hausnummer : 1
+Postleitzahl : 12345
+Stadt : Musterstadt
+Geboren am : 17.05.2020
+E-Mail : info@benjamin-zekavica.de
+
+
+Weiblicher Partner
+
+Vorname : Klara
+Nachname : Musterfrau
+Strasse : Musterweg
+Hausnummer : 1
+Postleitzahl : 12345
+Stadt : Musterstadt
+Geboren am : 16.05.2020
+E-Mail : info@benjamin-zekavica.de
+
+
+Allgemeine Fragen
+Welche Tanzschule möchten Sie besuchen? : Bailando
+Haben Sie unser Festival besucht? : Ja
+Erfahrungen : Anfänger
+Bezahlung mit : Kreditkarte
+Kreditkartennummer : 7878787387827382
+Datenschutz : Ja, zugestimmt.
+Schnupperkurs für 2 Personen : Ja, zugestimmt.
